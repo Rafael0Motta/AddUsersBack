@@ -7,7 +7,7 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors());
 
-const users = [{"id": 1, "name": "TESTE", "age": 22}];
+const users = [];
 
 const checkUserId = (req, res, next) => {
   const { id } = req.params;
